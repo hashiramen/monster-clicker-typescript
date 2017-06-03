@@ -1,0 +1,244 @@
+body{
+    padding: 0;
+    margin: 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bubbler One', sans-serif;
+    background: #6190E8; 
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8); 
+    background: linear-gradient(to right, #A7BFE8, #6190E8); 
+
+}
+
+p,h1,h2,h3,h4,ul{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bubbler One', sans-serif;
+    font-weight: 100; 
+}
+
+#game{
+    margin-top: 5%;
+    position: relative;
+    width:660px;
+    height:400px;
+    background:linear-gradient(141deg, rgb(55, 86, 135) 0%, rgb(53, 96, 163) 51%, rgb(55, 111, 198) 75%);
+    color:#ECF0F1;
+    overflow: hidden;
+    border: 4px solid black;
+}
+
+#player-status{
+    width:20%;
+    padding-left:1em;
+    padding-top: 1.3em;
+    position: relative;
+    top:0;
+    left: 0;
+
+    overflow: hidden;
+}
+
+#monster{
+    position: relative;
+    top:0;
+    left: 200px;
+    width:300px;
+    text-align: center;
+}
+
+#monster:hover > .img img{
+    transform: scale(1.02)
+}
+
+#monster:active > .img img{
+    transform: scale(.9)
+}
+
+#monster .name{
+
+}
+
+#monster .name p{
+
+}
+
+#monster .hp{
+
+}
+
+#monster .hp .current{
+
+}
+
+#monster .hp .max{
+
+}
+#monster .img{
+    width:100%;
+}
+
+#monster .img img{
+    width:100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+#notification{
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+.notif{
+    font-weight: 600;
+    position: absolute; 
+    color:red;
+    top:0;
+    left: 0;
+    animation-name: m-notif;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+.notif-p{
+    position: absolute;
+    color:red;
+    top:0;
+    left: 0;
+    animation-name: m-notif;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes m-notif {
+    from{font-size: 3em; opacity: 1;}
+    to{font-size:1.2em; opacity: .05; display: none;}
+}
+@keyframes p-notif {
+    from{font-size: 1.5em; opacity: 1;}
+    to{font-size:.6em; opacity: .05;display: none;}
+}
+
+#upgrades-list{
+    color:black;
+}
+
+.silver-wrap{
+    background: rgba(31, 55, 93, .5);
+    overflow: hidden;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    width:100%;
+    float:left;
+}
+.silver-wrap img{
+    max-width: 20px;
+    float:lefT;
+}
+
+.silver-wrap #silver{
+    text-align: right;
+    padding-right: 5%;
+}
+
+#global-notif{
+    position: relative;
+    width:100%;
+    z-index: 5;
+}
+
+#global-notif .notgif-g{
+    padding-left: 1em;
+    padding-bottom: .1em;
+    padding-top: .1em;
+    font-size: .9em;
+    position: absolute;
+    width:100%;
+    background: rgba(102, 140, 204, .5);
+    color:white;
+    animation-name: GlobalNotification, GlobalNotificationHide;
+    animation-duration: 200ms, 700ms;
+    animation-delay: 0s, 1.5s; 
+    animation-iteration-count: 1, 1;
+}
+
+@keyframes GlobalNotification{
+    from{left:100%;}
+    to{left:0;}
+}
+
+@keyframes GlobalNotificationHide{
+    from{opacity:1;}
+    to{opacity:0;display: none;}
+}
+progress {
+  /* styles */
+}
+
+progress::-webkit-progress-bar {
+    width:100%;
+  background-color: red;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+
+progress::-webkit-progress-value {
+    width:100%;
+  background-color: red;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+
+progress::-moz-progress-bar {
+    width:100%;
+  background-color: red;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+
+ul{
+    list-style: none;
+    width:100%;
+}
+
+#upgrades-list li{
+    margin-bottom: .2em;
+    padding: .3em .3em .3em .3em;
+    text-align: center;
+    background:linear-gradient(90deg, transparent 0%, rgba(102, 140, 204, .7) 51%, transparent 100%);
+}
+
+#upgrades-list li p{
+    opacity: .7;
+    font-weight: 600;
+    color:white;
+}
+
+#upgrades-list li button{
+    background: rgba(102, 140, 204, .2);
+    color:rgba(255,255,255, .5);
+    padding: .3em;
+    border: 1px solid rgba(102, 140, 204, 1);
+}
+#upgrades-list li button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+#upgrades{
+    width:20%;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#stage{
+    position: absolute;
+    right: 5%;
+    top: 6%;
+
+}

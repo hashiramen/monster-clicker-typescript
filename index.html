@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <p id="stage"></p>
+        <div id="global-notif"></div>
+        <div id="player-status">
+            <p id="nick"></p>
+            <div id="p-status">
+                <!--<progress value="22" max="100"></progress>-->
+            <p><span class="p-current"></span>/<span class="p-max"></span> HP</p>
+            </div>
+            <div class="silver-wrap">
+                <img src="https://www.iconfinder.com/data/icons/shoppy-flat-vol-1/512/Shoppy_Flat_gold_coin_euro_pound_coin_money-512.png" alt="">
+                <p id="silver"></p>
+            </div>
+            <div id="notification-player"></div>
+        </div>
+        <div id="monster">
+            <div class="name">
+                <p>Scary Policeman</p>
+            </div>
+            <div class="hp"><span class="current">21</span>/<span class="max">21</span></div>
+            <div class="img">
+                <img draggable="false" src="http://orig06.deviantart.net/fa80/f/2017/128/0/7/a_captain_j_by_stopsignal-db8m404.gif" alt="">
+            </div>
+            <div id="notification"></div>
+        </div>
+        <div id="upgrades">
+            <ul id="upgrades-list"></ul>
+        </div>       
+    </div>
+    <script src="./app/app.min.ts" ></script>
+</body>
+</html>
